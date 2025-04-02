@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "8X9H/xy1Dbc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ryzen\\Desktop\\Projects\\Wpf\\PrintApp\\PrintApp\\PrintApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.2\\microsoft.win32.systemevents.9.0.2.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\pdfiumviewer\\2.13.0\\pdfiumviewer.2.13.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\pdfiumviewer.native.x86.v8-xfa\\2018.4.8.256\\pdfiumviewer.native.x86.v8-xfa.2018.4.8.256.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\pdfiumviewer.native.x86_64.v8-xfa\\2018.4.8.256\\pdfiumviewer.native.x86_64.v8-xfa.2018.4.8.256.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\pdfsharp\\6.1.1\\pdfsharp.6.1.1.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\system.drawing.common\\9.0.2\\system.drawing.common.9.0.2.nupkg.sha512",
+    "C:\\Users\\Ryzen\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Le package 'PdfiumViewer 2.13.0' a été restauré en utilisant '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' au lieu du framework cible du projet 'net8.0-windows7.0'. Ce package n'est peut-être pas totalement compatible avec votre projet.",
+      "libraryId": "PdfiumViewer",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
+}

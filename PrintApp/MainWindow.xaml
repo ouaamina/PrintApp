@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <TabControl>
+        <!-- Impression Tab -->
+        <TabItem Header="Impression">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Left side for file selection -->
+                <DockPanel Grid.Column="0" Margin="10">
+                    <Button Content="Ouvrir" Click="OpenPdfFile" Width="456" DockPanel.Dock="Bottom" Margin="0,10,0,0" />
+                    <Border BorderBrush="Black" BorderThickness="1" Padding="10" AllowDrop="True" Height="Auto">
+                        <WebBrowser x:Name="PdfViewer" VerticalAlignment="Stretch" />
+                    </Border>
+                </DockPanel>
+
+                <!-- Right side for form inputs -->
+                <StackPanel Grid.Column="1" Margin="10">
+                    <Label Content="Noir et blanc" HorizontalAlignment="Stretch" />
+                    <ComboBox x:Name="PrinterComboBox" HorizontalAlignment="Stretch" Margin="0,0,0,10" />
+
+                    <Label Content="Couleur" HorizontalAlignment="Stretch" />
+                    <ComboBox x:Name="ColorPrinterComboBox" HorizontalAlignment="Stretch" Margin="0,0,0,10" />
+
+                    <Label Content="Pages" HorizontalAlignment="Stretch" />
+                    <ComboBox x:Name="PagesComboBox" HorizontalAlignment="Stretch" Margin="0,0,0,10" SelectionChanged="PagesComboBox_SelectionChanged" SelectedIndex="0">
+                        <ComboBoxItem Content="Tous" />
+                        <ComboBoxItem Content="Personnalisé" />
+                    </ComboBox>
+                    <TextBox x:Name="CustomPagesTextBox" HorizontalAlignment="Stretch" Margin="0,0,0,10" Visibility="Collapsed" />
+
+                    <Label Content="Copies" HorizontalAlignment="Stretch" />
+                    <TextBox x:Name="CopiesTextBox" HorizontalAlignment="Stretch" Margin="0,0,0,10" Text="1" PreviewTextInput="CopiesTextBox_PreviewTextInput" />
+
+                    <Button Content="Imprimer" Click="PrintPdfFile" HorizontalAlignment="Stretch" Margin="10,10,0,0" />
+                </StackPanel>
+            </Grid>
+        </TabItem>
+
+        <!-- Statistiques Tab -->
+        <TabItem Header="Statistiques">
+            <Grid>
+                <!-- Contenu de l'onglet Statistiques -->
+                <Label Content="Statistiques" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>
